@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5404C9FE2A11009000C9B9C9 /* CollisionDebugAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404C9FD2A11009000C9B9C9 /* CollisionDebugAppApp.swift */; };
+		5404CA002A11009000C9B9C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404C9FF2A11009000C9B9C9 /* ContentView.swift */; };
+		5404CA022A11009200C9B9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5404CA012A11009200C9B9C9 /* Assets.xcassets */; };
+		5404CA062A11009200C9B9C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5404CA052A11009200C9B9C9 /* Preview Assets.xcassets */; };
+		5404CA112A11012200C9B9C9 /* iFixBox in Frameworks */ = {isa = PBXBuildFile; productRef = 5404CA102A11012200C9B9C9 /* iFixBox */; };
+		5404CA132A11012200C9B9C9 /* iFixFloat in Frameworks */ = {isa = PBXBuildFile; productRef = 5404CA122A11012200C9B9C9 /* iFixFloat */; };
+		5404CA1C2A1101DC00C9B9C9 /* PersistInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA152A1101DC00C9B9C9 /* PersistInt.swift */; };
+		5404CA1D2A1101DC00C9B9C9 /* CGFloat+FixFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA172A1101DC00C9B9C9 /* CGFloat+FixFloat.swift */; };
+		5404CA1E2A1101DC00C9B9C9 /* CGSize+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA182A1101DC00C9B9C9 /* CGSize+Compare.swift */; };
+		5404CA1F2A1101DC00C9B9C9 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA192A1101DC00C9B9C9 /* Matrix.swift */; };
+		5404CA202A1101DC00C9B9C9 /* CGPoint+Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA1A2A1101DC00C9B9C9 /* CGPoint+Vector.swift */; };
+		5404CA242A11023E00C9B9C9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA232A11023E00C9B9C9 /* ContentViewModel.swift */; };
+		5404CA272A11029700C9B9C9 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA262A11029700C9B9C9 /* TestData.swift */; };
+		5404CA2A2A1104B700C9B9C9 /* EditorScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA292A1104B700C9B9C9 /* EditorScene.swift */; };
+		5404CA2C2A1104C600C9B9C9 /* EditorSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA2B2A1104C600C9B9C9 /* EditorSceneView.swift */; };
+		5404CA2E2A110D8800C9B9C9 /* VertextEditorScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA2D2A110D8800C9B9C9 /* VertextEditorScene.swift */; };
+		5404CA312A110DAE00C9B9C9 /* VertextEditorSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA302A110DAE00C9B9C9 /* VertextEditorSceneView.swift */; };
+		5404CA402A11118C00C9B9C9 /* EditorDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA342A11118C00C9B9C9 /* EditorDot.swift */; };
+		5404CA432A11118C00C9B9C9 /* ContourEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA382A11118C00C9B9C9 /* ContourEditorView.swift */; };
+		5404CA442A11118C00C9B9C9 /* ContourEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA392A11118C00C9B9C9 /* ContourEditor.swift */; };
+		5404CA452A11118C00C9B9C9 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3A2A11118C00C9B9C9 /* Edge.swift */; };
+		5404CA462A11118C00C9B9C9 /* EdgeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3B2A11118C00C9B9C9 /* EdgeKey.swift */; };
+		5404CA472A11118C00C9B9C9 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3C2A11118C00C9B9C9 /* Dot.swift */; };
+		5404CA482A11118C00C9B9C9 /* PointsEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3E2A11118C00C9B9C9 /* PointsEditorView.swift */; };
+		5404CA492A11118C00C9B9C9 /* PointsEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3F2A11118C00C9B9C9 /* PointsEditor.swift */; };
+		5404CA4C2A113D6000C9B9C9 /* SolverSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA4B2A113D6000C9B9C9 /* SolverSceneView.swift */; };
+		5404CA4E2A113D6800C9B9C9 /* SolverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA4D2A113D6800C9B9C9 /* SolverScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5404C9FA2A11009000C9B9C9 /* CollisionDebugApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollisionDebugApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5404C9FD2A11009000C9B9C9 /* CollisionDebugAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionDebugAppApp.swift; sourceTree = "<group>"; };
+		5404C9FF2A11009000C9B9C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5404CA012A11009200C9B9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5404CA032A11009200C9B9C9 /* CollisionDebugApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CollisionDebugApp.entitlements; sourceTree = "<group>"; };
+		5404CA052A11009200C9B9C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5404CA0D2A11010800C9B9C9 /* iFixFloat */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixFloat; path = ../iFixFloat; sourceTree = "<group>"; };
+		5404CA0E2A11011300C9B9C9 /* iFixBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixBox; path = ../iFixBox; sourceTree = "<group>"; };
+		5404CA152A1101DC00C9B9C9 /* PersistInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistInt.swift; sourceTree = "<group>"; };
+		5404CA172A1101DC00C9B9C9 /* CGFloat+FixFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+FixFloat.swift"; sourceTree = "<group>"; };
+		5404CA182A1101DC00C9B9C9 /* CGSize+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Compare.swift"; sourceTree = "<group>"; };
+		5404CA192A1101DC00C9B9C9 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		5404CA1A2A1101DC00C9B9C9 /* CGPoint+Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Vector.swift"; sourceTree = "<group>"; };
+		5404CA232A11023E00C9B9C9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5404CA262A11029700C9B9C9 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		5404CA292A1104B700C9B9C9 /* EditorScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorScene.swift; sourceTree = "<group>"; };
+		5404CA2B2A1104C600C9B9C9 /* EditorSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSceneView.swift; sourceTree = "<group>"; };
+		5404CA2D2A110D8800C9B9C9 /* VertextEditorScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertextEditorScene.swift; sourceTree = "<group>"; };
+		5404CA302A110DAE00C9B9C9 /* VertextEditorSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertextEditorSceneView.swift; sourceTree = "<group>"; };
+		5404CA342A11118C00C9B9C9 /* EditorDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorDot.swift; sourceTree = "<group>"; };
+		5404CA382A11118C00C9B9C9 /* ContourEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContourEditorView.swift; sourceTree = "<group>"; };
+		5404CA392A11118C00C9B9C9 /* ContourEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContourEditor.swift; sourceTree = "<group>"; };
+		5404CA3A2A11118C00C9B9C9 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		5404CA3B2A11118C00C9B9C9 /* EdgeKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeKey.swift; sourceTree = "<group>"; };
+		5404CA3C2A11118C00C9B9C9 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
+		5404CA3E2A11118C00C9B9C9 /* PointsEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsEditorView.swift; sourceTree = "<group>"; };
+		5404CA3F2A11118C00C9B9C9 /* PointsEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsEditor.swift; sourceTree = "<group>"; };
+		5404CA4B2A113D6000C9B9C9 /* SolverSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverSceneView.swift; sourceTree = "<group>"; };
+		5404CA4D2A113D6800C9B9C9 /* SolverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5404C9F72A11009000C9B9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5404CA112A11012200C9B9C9 /* iFixBox in Frameworks */,
+				5404CA132A11012200C9B9C9 /* iFixFloat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5404C9F12A11009000C9B9C9 = {
+			isa = PBXGroup;
+			children = (
+				5404CA0C2A11010800C9B9C9 /* Packages */,
+				5404C9FC2A11009000C9B9C9 /* CollisionDebugApp */,
+				5404C9FB2A11009000C9B9C9 /* Products */,
+				5404CA0F2A11012200C9B9C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5404C9FB2A11009000C9B9C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5404C9FA2A11009000C9B9C9 /* CollisionDebugApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5404C9FC2A11009000C9B9C9 /* CollisionDebugApp */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA4A2A113D4D00C9B9C9 /* Solver */,
+				5404CA332A11118C00C9B9C9 /* Shape */,
+				5404CA2F2A110D9300C9B9C9 /* SubEditor */,
+				5404CA282A11049F00C9B9C9 /* MainEditor */,
+				5404CA252A11028C00C9B9C9 /* Data */,
+				5404CA222A11022700C9B9C9 /* Main */,
+				5404CA142A1101DC00C9B9C9 /* Util */,
+				5404C9FD2A11009000C9B9C9 /* CollisionDebugAppApp.swift */,
+				5404CA012A11009200C9B9C9 /* Assets.xcassets */,
+				5404CA032A11009200C9B9C9 /* CollisionDebugApp.entitlements */,
+				5404CA042A11009200C9B9C9 /* Preview Content */,
+			);
+			path = CollisionDebugApp;
+			sourceTree = "<group>";
+		};
+		5404CA042A11009200C9B9C9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA052A11009200C9B9C9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5404CA0C2A11010800C9B9C9 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA0D2A11010800C9B9C9 /* iFixFloat */,
+				5404CA0E2A11011300C9B9C9 /* iFixBox */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5404CA0F2A11012200C9B9C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5404CA142A1101DC00C9B9C9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA152A1101DC00C9B9C9 /* PersistInt.swift */,
+				5404CA162A1101DC00C9B9C9 /* Math */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5404CA162A1101DC00C9B9C9 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA172A1101DC00C9B9C9 /* CGFloat+FixFloat.swift */,
+				5404CA182A1101DC00C9B9C9 /* CGSize+Compare.swift */,
+				5404CA192A1101DC00C9B9C9 /* Matrix.swift */,
+				5404CA1A2A1101DC00C9B9C9 /* CGPoint+Vector.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		5404CA222A11022700C9B9C9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5404C9FF2A11009000C9B9C9 /* ContentView.swift */,
+				5404CA232A11023E00C9B9C9 /* ContentViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5404CA252A11028C00C9B9C9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA262A11029700C9B9C9 /* TestData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5404CA282A11049F00C9B9C9 /* MainEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA292A1104B700C9B9C9 /* EditorScene.swift */,
+				5404CA2B2A1104C600C9B9C9 /* EditorSceneView.swift */,
+			);
+			path = MainEditor;
+			sourceTree = "<group>";
+		};
+		5404CA2F2A110D9300C9B9C9 /* SubEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA2D2A110D8800C9B9C9 /* VertextEditorScene.swift */,
+				5404CA302A110DAE00C9B9C9 /* VertextEditorSceneView.swift */,
+			);
+			path = SubEditor;
+			sourceTree = "<group>";
+		};
+		5404CA332A11118C00C9B9C9 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA342A11118C00C9B9C9 /* EditorDot.swift */,
+				5404CA3A2A11118C00C9B9C9 /* Edge.swift */,
+				5404CA3B2A11118C00C9B9C9 /* EdgeKey.swift */,
+				5404CA3C2A11118C00C9B9C9 /* Dot.swift */,
+				5404CA352A11118C00C9B9C9 /* ContourEditor */,
+				5404CA3D2A11118C00C9B9C9 /* PointsEditor */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		5404CA352A11118C00C9B9C9 /* ContourEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA382A11118C00C9B9C9 /* ContourEditorView.swift */,
+				5404CA392A11118C00C9B9C9 /* ContourEditor.swift */,
+			);
+			path = ContourEditor;
+			sourceTree = "<group>";
+		};
+		5404CA3D2A11118C00C9B9C9 /* PointsEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA3E2A11118C00C9B9C9 /* PointsEditorView.swift */,
+				5404CA3F2A11118C00C9B9C9 /* PointsEditor.swift */,
+			);
+			path = PointsEditor;
+			sourceTree = "<group>";
+		};
+		5404CA4A2A113D4D00C9B9C9 /* Solver */ = {
+			isa = PBXGroup;
+			children = (
+				5404CA4B2A113D6000C9B9C9 /* SolverSceneView.swift */,
+				5404CA4D2A113D6800C9B9C9 /* SolverScene.swift */,
+			);
+			path = Solver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5404C9F92A11009000C9B9C9 /* CollisionDebugApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5404CA092A11009200C9B9C9 /* Build configuration list for PBXNativeTarget "CollisionDebugApp" */;
+			buildPhases = (
+				5404C9F62A11009000C9B9C9 /* Sources */,
+				5404C9F72A11009000C9B9C9 /* Frameworks */,
+				5404C9F82A11009000C9B9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollisionDebugApp;
+			packageProductDependencies = (
+				5404CA102A11012200C9B9C9 /* iFixBox */,
+				5404CA122A11012200C9B9C9 /* iFixFloat */,
+			);
+			productName = CollisionDebugApp;
+			productReference = 5404C9FA2A11009000C9B9C9 /* CollisionDebugApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5404C9F22A11009000C9B9C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5404C9F92A11009000C9B9C9 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 5404C9F52A11009000C9B9C9 /* Build configuration list for PBXProject "CollisionDebugApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5404C9F12A11009000C9B9C9;
+			productRefGroup = 5404C9FB2A11009000C9B9C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5404C9F92A11009000C9B9C9 /* CollisionDebugApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5404C9F82A11009000C9B9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5404CA062A11009200C9B9C9 /* Preview Assets.xcassets in Resources */,
+				5404CA022A11009200C9B9C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5404C9F62A11009000C9B9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5404CA4C2A113D6000C9B9C9 /* SolverSceneView.swift in Sources */,
+				5404CA242A11023E00C9B9C9 /* ContentViewModel.swift in Sources */,
+				5404CA492A11118C00C9B9C9 /* PointsEditor.swift in Sources */,
+				5404CA2A2A1104B700C9B9C9 /* EditorScene.swift in Sources */,
+				5404CA462A11118C00C9B9C9 /* EdgeKey.swift in Sources */,
+				5404CA432A11118C00C9B9C9 /* ContourEditorView.swift in Sources */,
+				5404CA482A11118C00C9B9C9 /* PointsEditorView.swift in Sources */,
+				5404CA2C2A1104C600C9B9C9 /* EditorSceneView.swift in Sources */,
+				5404CA1E2A1101DC00C9B9C9 /* CGSize+Compare.swift in Sources */,
+				5404CA402A11118C00C9B9C9 /* EditorDot.swift in Sources */,
+				5404CA1C2A1101DC00C9B9C9 /* PersistInt.swift in Sources */,
+				5404CA1F2A1101DC00C9B9C9 /* Matrix.swift in Sources */,
+				5404CA312A110DAE00C9B9C9 /* VertextEditorSceneView.swift in Sources */,
+				5404CA452A11118C00C9B9C9 /* Edge.swift in Sources */,
+				5404CA202A1101DC00C9B9C9 /* CGPoint+Vector.swift in Sources */,
+				5404CA4E2A113D6800C9B9C9 /* SolverScene.swift in Sources */,
+				5404CA1D2A1101DC00C9B9C9 /* CGFloat+FixFloat.swift in Sources */,
+				5404CA002A11009000C9B9C9 /* ContentView.swift in Sources */,
+				5404CA272A11029700C9B9C9 /* TestData.swift in Sources */,
+				5404CA472A11118C00C9B9C9 /* Dot.swift in Sources */,
+				5404CA442A11118C00C9B9C9 /* ContourEditor.swift in Sources */,
+				5404CA2E2A110D8800C9B9C9 /* VertextEditorScene.swift in Sources */,
+				5404C9FE2A11009000C9B9C9 /* CollisionDebugAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5404CA072A11009200C9B9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5404CA082A11009200C9B9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5404CA0A2A11009200C9B9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CollisionDebugApp/CollisionDebugApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CollisionDebugApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HPV9E52JPX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nail.CollisionDebugApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5404CA0B2A11009200C9B9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CollisionDebugApp/CollisionDebugApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CollisionDebugApp/Preview Content\"";
+				DEVELOPMENT_TEAM = HPV9E52JPX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nail.CollisionDebugApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5404C9F52A11009000C9B9C9 /* Build configuration list for PBXProject "CollisionDebugApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5404CA072A11009200C9B9C9 /* Debug */,
+				5404CA082A11009200C9B9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5404CA092A11009200C9B9C9 /* Build configuration list for PBXNativeTarget "CollisionDebugApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5404CA0A2A11009200C9B9C9 /* Debug */,
+				5404CA0B2A11009200C9B9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5404CA102A11012200C9B9C9 /* iFixBox */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iFixBox;
+		};
+		5404CA122A11012200C9B9C9 /* iFixFloat */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iFixFloat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5404C9F22A11009000C9B9C9 /* Project object */;
+}
