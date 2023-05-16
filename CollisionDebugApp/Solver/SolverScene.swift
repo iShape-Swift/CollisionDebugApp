@@ -8,6 +8,7 @@
 import SwiftUI
 import iFixBox
 import iFixFloat
+import iDebug
 
 struct CrossDot: Identifiable {
     
@@ -132,16 +133,16 @@ final class SolverScene: ObservableObject {
         let mt = Transform.convertFromBtoA(trB, trA)
         
         let b2 = ConvexCollider(transform: mt, collider: b)
-        let dots = ConvexIntersectSolver.intersect(a: a, b: b2)
+//        let dots = ConvexIntersectSolver.intersect(a: a, b: b2)
         
         crossDots.removeAll()
-        let r: CGFloat = 4
-        for i in 0..<dots.count {
-            let d = trA.convertAsPoint(dots[i].p).point
-            let c = matrix.screen(worldPoint: d) - CGPoint(x: r, y: r)
-            let crDot = CrossDot(id: i, center: c, radius: r, color: .red)
-            crossDots.append(crDot)
-        }
+//        let r: CGFloat = 4
+//        for i in 0..<dots.count {
+//            let d = trA.convertAsPoint(dots[i].p).point
+//            let c = matrix.screen(worldPoint: d) - CGPoint(x: r, y: r)
+//            let crDot = CrossDot(id: i, center: c, radius: r, color: .red)
+//            crossDots.append(crDot)
+//        }
 
         self.objectWillChange.send()
     }

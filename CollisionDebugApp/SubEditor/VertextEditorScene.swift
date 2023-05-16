@@ -8,6 +8,7 @@
 import SwiftUI
 import iFixBox
 import iFixFloat
+import iDebug
 
 final class VertextEditorScene: ObservableObject {
     

@@ -13,27 +13,15 @@
 		5404CA062A11009200C9B9C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5404CA052A11009200C9B9C9 /* Preview Assets.xcassets */; };
 		5404CA112A11012200C9B9C9 /* iFixBox in Frameworks */ = {isa = PBXBuildFile; productRef = 5404CA102A11012200C9B9C9 /* iFixBox */; };
 		5404CA132A11012200C9B9C9 /* iFixFloat in Frameworks */ = {isa = PBXBuildFile; productRef = 5404CA122A11012200C9B9C9 /* iFixFloat */; };
-		5404CA1C2A1101DC00C9B9C9 /* PersistInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA152A1101DC00C9B9C9 /* PersistInt.swift */; };
-		5404CA1D2A1101DC00C9B9C9 /* CGFloat+FixFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA172A1101DC00C9B9C9 /* CGFloat+FixFloat.swift */; };
-		5404CA1E2A1101DC00C9B9C9 /* CGSize+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA182A1101DC00C9B9C9 /* CGSize+Compare.swift */; };
-		5404CA1F2A1101DC00C9B9C9 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA192A1101DC00C9B9C9 /* Matrix.swift */; };
-		5404CA202A1101DC00C9B9C9 /* CGPoint+Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA1A2A1101DC00C9B9C9 /* CGPoint+Vector.swift */; };
 		5404CA242A11023E00C9B9C9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA232A11023E00C9B9C9 /* ContentViewModel.swift */; };
 		5404CA272A11029700C9B9C9 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA262A11029700C9B9C9 /* TestData.swift */; };
 		5404CA2A2A1104B700C9B9C9 /* EditorScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA292A1104B700C9B9C9 /* EditorScene.swift */; };
 		5404CA2C2A1104C600C9B9C9 /* EditorSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA2B2A1104C600C9B9C9 /* EditorSceneView.swift */; };
 		5404CA2E2A110D8800C9B9C9 /* VertextEditorScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA2D2A110D8800C9B9C9 /* VertextEditorScene.swift */; };
 		5404CA312A110DAE00C9B9C9 /* VertextEditorSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA302A110DAE00C9B9C9 /* VertextEditorSceneView.swift */; };
-		5404CA402A11118C00C9B9C9 /* EditorDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA342A11118C00C9B9C9 /* EditorDot.swift */; };
-		5404CA432A11118C00C9B9C9 /* ContourEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA382A11118C00C9B9C9 /* ContourEditorView.swift */; };
-		5404CA442A11118C00C9B9C9 /* ContourEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA392A11118C00C9B9C9 /* ContourEditor.swift */; };
-		5404CA452A11118C00C9B9C9 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3A2A11118C00C9B9C9 /* Edge.swift */; };
-		5404CA462A11118C00C9B9C9 /* EdgeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3B2A11118C00C9B9C9 /* EdgeKey.swift */; };
-		5404CA472A11118C00C9B9C9 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3C2A11118C00C9B9C9 /* Dot.swift */; };
-		5404CA482A11118C00C9B9C9 /* PointsEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3E2A11118C00C9B9C9 /* PointsEditorView.swift */; };
-		5404CA492A11118C00C9B9C9 /* PointsEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA3F2A11118C00C9B9C9 /* PointsEditor.swift */; };
 		5404CA4C2A113D6000C9B9C9 /* SolverSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA4B2A113D6000C9B9C9 /* SolverSceneView.swift */; };
 		5404CA4E2A113D6800C9B9C9 /* SolverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA4D2A113D6800C9B9C9 /* SolverScene.swift */; };
+		54D13DA32A136A990021A69A /* iDebug in Frameworks */ = {isa = PBXBuildFile; productRef = 54D13DA22A136A990021A69A /* iDebug */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,27 +33,15 @@
 		5404CA052A11009200C9B9C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5404CA0D2A11010800C9B9C9 /* iFixFloat */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixFloat; path = ../iFixFloat; sourceTree = "<group>"; };
 		5404CA0E2A11011300C9B9C9 /* iFixBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixBox; path = ../iFixBox; sourceTree = "<group>"; };
-		5404CA152A1101DC00C9B9C9 /* PersistInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistInt.swift; sourceTree = "<group>"; };
-		5404CA172A1101DC00C9B9C9 /* CGFloat+FixFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+FixFloat.swift"; sourceTree = "<group>"; };
-		5404CA182A1101DC00C9B9C9 /* CGSize+Compare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Compare.swift"; sourceTree = "<group>"; };
-		5404CA192A1101DC00C9B9C9 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		5404CA1A2A1101DC00C9B9C9 /* CGPoint+Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Vector.swift"; sourceTree = "<group>"; };
 		5404CA232A11023E00C9B9C9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		5404CA262A11029700C9B9C9 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		5404CA292A1104B700C9B9C9 /* EditorScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorScene.swift; sourceTree = "<group>"; };
 		5404CA2B2A1104C600C9B9C9 /* EditorSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSceneView.swift; sourceTree = "<group>"; };
 		5404CA2D2A110D8800C9B9C9 /* VertextEditorScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertextEditorScene.swift; sourceTree = "<group>"; };
 		5404CA302A110DAE00C9B9C9 /* VertextEditorSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertextEditorSceneView.swift; sourceTree = "<group>"; };
-		5404CA342A11118C00C9B9C9 /* EditorDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorDot.swift; sourceTree = "<group>"; };
-		5404CA382A11118C00C9B9C9 /* ContourEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContourEditorView.swift; sourceTree = "<group>"; };
-		5404CA392A11118C00C9B9C9 /* ContourEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContourEditor.swift; sourceTree = "<group>"; };
-		5404CA3A2A11118C00C9B9C9 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		5404CA3B2A11118C00C9B9C9 /* EdgeKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeKey.swift; sourceTree = "<group>"; };
-		5404CA3C2A11118C00C9B9C9 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
-		5404CA3E2A11118C00C9B9C9 /* PointsEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsEditorView.swift; sourceTree = "<group>"; };
-		5404CA3F2A11118C00C9B9C9 /* PointsEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsEditor.swift; sourceTree = "<group>"; };
 		5404CA4B2A113D6000C9B9C9 /* SolverSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverSceneView.swift; sourceTree = "<group>"; };
 		5404CA4D2A113D6800C9B9C9 /* SolverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverScene.swift; sourceTree = "<group>"; };
+		54D13DA12A136A030021A69A /* iDebug */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iDebug; path = ../iDebug; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D13DA32A136A990021A69A /* iDebug in Frameworks */,
 				5404CA112A11012200C9B9C9 /* iFixBox in Frameworks */,
 				5404CA132A11012200C9B9C9 /* iFixFloat in Frameworks */,
 			);
@@ -103,12 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				5404CA4A2A113D4D00C9B9C9 /* Solver */,
-				5404CA332A11118C00C9B9C9 /* Shape */,
 				5404CA2F2A110D9300C9B9C9 /* SubEditor */,
 				5404CA282A11049F00C9B9C9 /* MainEditor */,
 				5404CA252A11028C00C9B9C9 /* Data */,
 				5404CA222A11022700C9B9C9 /* Main */,
-				5404CA142A1101DC00C9B9C9 /* Util */,
 				5404C9FD2A11009000C9B9C9 /* CollisionDebugAppApp.swift */,
 				5404CA012A11009200C9B9C9 /* Assets.xcassets */,
 				5404CA032A11009200C9B9C9 /* CollisionDebugApp.entitlements */,
@@ -130,6 +105,7 @@
 			children = (
 				5404CA0D2A11010800C9B9C9 /* iFixFloat */,
 				5404CA0E2A11011300C9B9C9 /* iFixBox */,
+				54D13DA12A136A030021A69A /* iDebug */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -139,26 +115,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5404CA142A1101DC00C9B9C9 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				5404CA152A1101DC00C9B9C9 /* PersistInt.swift */,
-				5404CA162A1101DC00C9B9C9 /* Math */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		5404CA162A1101DC00C9B9C9 /* Math */ = {
-			isa = PBXGroup;
-			children = (
-				5404CA172A1101DC00C9B9C9 /* CGFloat+FixFloat.swift */,
-				5404CA182A1101DC00C9B9C9 /* CGSize+Compare.swift */,
-				5404CA192A1101DC00C9B9C9 /* Matrix.swift */,
-				5404CA1A2A1101DC00C9B9C9 /* CGPoint+Vector.swift */,
-			);
-			path = Math;
 			sourceTree = "<group>";
 		};
 		5404CA222A11022700C9B9C9 /* Main */ = {
@@ -196,37 +152,6 @@
 			path = SubEditor;
 			sourceTree = "<group>";
 		};
-		5404CA332A11118C00C9B9C9 /* Shape */ = {
-			isa = PBXGroup;
-			children = (
-				5404CA342A11118C00C9B9C9 /* EditorDot.swift */,
-				5404CA3A2A11118C00C9B9C9 /* Edge.swift */,
-				5404CA3B2A11118C00C9B9C9 /* EdgeKey.swift */,
-				5404CA3C2A11118C00C9B9C9 /* Dot.swift */,
-				5404CA352A11118C00C9B9C9 /* ContourEditor */,
-				5404CA3D2A11118C00C9B9C9 /* PointsEditor */,
-			);
-			path = Shape;
-			sourceTree = "<group>";
-		};
-		5404CA352A11118C00C9B9C9 /* ContourEditor */ = {
-			isa = PBXGroup;
-			children = (
-				5404CA382A11118C00C9B9C9 /* ContourEditorView.swift */,
-				5404CA392A11118C00C9B9C9 /* ContourEditor.swift */,
-			);
-			path = ContourEditor;
-			sourceTree = "<group>";
-		};
-		5404CA3D2A11118C00C9B9C9 /* PointsEditor */ = {
-			isa = PBXGroup;
-			children = (
-				5404CA3E2A11118C00C9B9C9 /* PointsEditorView.swift */,
-				5404CA3F2A11118C00C9B9C9 /* PointsEditor.swift */,
-			);
-			path = PointsEditor;
-			sourceTree = "<group>";
-		};
 		5404CA4A2A113D4D00C9B9C9 /* Solver */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +180,7 @@
 			packageProductDependencies = (
 				5404CA102A11012200C9B9C9 /* iFixBox */,
 				5404CA122A11012200C9B9C9 /* iFixFloat */,
+				54D13DA22A136A990021A69A /* iDebug */,
 			);
 			productName = CollisionDebugApp;
 			productReference = 5404C9FA2A11009000C9B9C9 /* CollisionDebugApp.app */;
@@ -312,25 +238,12 @@
 			files = (
 				5404CA4C2A113D6000C9B9C9 /* SolverSceneView.swift in Sources */,
 				5404CA242A11023E00C9B9C9 /* ContentViewModel.swift in Sources */,
-				5404CA492A11118C00C9B9C9 /* PointsEditor.swift in Sources */,
 				5404CA2A2A1104B700C9B9C9 /* EditorScene.swift in Sources */,
-				5404CA462A11118C00C9B9C9 /* EdgeKey.swift in Sources */,
-				5404CA432A11118C00C9B9C9 /* ContourEditorView.swift in Sources */,
-				5404CA482A11118C00C9B9C9 /* PointsEditorView.swift in Sources */,
 				5404CA2C2A1104C600C9B9C9 /* EditorSceneView.swift in Sources */,
-				5404CA1E2A1101DC00C9B9C9 /* CGSize+Compare.swift in Sources */,
-				5404CA402A11118C00C9B9C9 /* EditorDot.swift in Sources */,
-				5404CA1C2A1101DC00C9B9C9 /* PersistInt.swift in Sources */,
-				5404CA1F2A1101DC00C9B9C9 /* Matrix.swift in Sources */,
 				5404CA312A110DAE00C9B9C9 /* VertextEditorSceneView.swift in Sources */,
-				5404CA452A11118C00C9B9C9 /* Edge.swift in Sources */,
-				5404CA202A1101DC00C9B9C9 /* CGPoint+Vector.swift in Sources */,
 				5404CA4E2A113D6800C9B9C9 /* SolverScene.swift in Sources */,
-				5404CA1D2A1101DC00C9B9C9 /* CGFloat+FixFloat.swift in Sources */,
 				5404CA002A11009000C9B9C9 /* ContentView.swift in Sources */,
 				5404CA272A11029700C9B9C9 /* TestData.swift in Sources */,
-				5404CA472A11118C00C9B9C9 /* Dot.swift in Sources */,
-				5404CA442A11118C00C9B9C9 /* ContourEditor.swift in Sources */,
 				5404CA2E2A110D8800C9B9C9 /* VertextEditorScene.swift in Sources */,
 				5404C9FE2A11009000C9B9C9 /* CollisionDebugAppApp.swift in Sources */,
 			);
@@ -555,6 +468,10 @@
 		5404CA122A11012200C9B9C9 /* iFixFloat */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iFixFloat;
+		};
+		54D13DA22A136A990021A69A /* iDebug */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iDebug;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
