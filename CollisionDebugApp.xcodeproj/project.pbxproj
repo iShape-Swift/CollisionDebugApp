@@ -21,6 +21,7 @@
 		5404CA312A110DAE00C9B9C9 /* VertextEditorSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA302A110DAE00C9B9C9 /* VertextEditorSceneView.swift */; };
 		5404CA4C2A113D6000C9B9C9 /* SolverSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA4B2A113D6000C9B9C9 /* SolverSceneView.swift */; };
 		5404CA4E2A113D6800C9B9C9 /* SolverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404CA4D2A113D6800C9B9C9 /* SolverScene.swift */; };
+		540D16AA2A1DE85E009B7889 /* iConvex in Frameworks */ = {isa = PBXBuildFile; productRef = 540D16A92A1DE85E009B7889 /* iConvex */; };
 		54D13DA32A136A990021A69A /* iDebug in Frameworks */ = {isa = PBXBuildFile; productRef = 54D13DA22A136A990021A69A /* iDebug */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		5404CA302A110DAE00C9B9C9 /* VertextEditorSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertextEditorSceneView.swift; sourceTree = "<group>"; };
 		5404CA4B2A113D6000C9B9C9 /* SolverSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverSceneView.swift; sourceTree = "<group>"; };
 		5404CA4D2A113D6800C9B9C9 /* SolverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverScene.swift; sourceTree = "<group>"; };
+		540D16A82A1DE785009B7889 /* iConvex */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iConvex; path = ../iConvex; sourceTree = "<group>"; };
 		54D13DA12A136A030021A69A /* iDebug */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iDebug; path = ../iDebug; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +54,7 @@
 				54D13DA32A136A990021A69A /* iDebug in Frameworks */,
 				5404CA112A11012200C9B9C9 /* iFixBox in Frameworks */,
 				5404CA132A11012200C9B9C9 /* iFixFloat in Frameworks */,
+				540D16AA2A1DE85E009B7889 /* iConvex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +109,7 @@
 				5404CA0D2A11010800C9B9C9 /* iFixFloat */,
 				5404CA0E2A11011300C9B9C9 /* iFixBox */,
 				54D13DA12A136A030021A69A /* iDebug */,
+				540D16A82A1DE785009B7889 /* iConvex */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -181,6 +185,7 @@
 				5404CA102A11012200C9B9C9 /* iFixBox */,
 				5404CA122A11012200C9B9C9 /* iFixFloat */,
 				54D13DA22A136A990021A69A /* iDebug */,
+				540D16A92A1DE85E009B7889 /* iConvex */,
 			);
 			productName = CollisionDebugApp;
 			productReference = 5404C9FA2A11009000C9B9C9 /* CollisionDebugApp.app */;
@@ -468,6 +473,10 @@
 		5404CA122A11012200C9B9C9 /* iFixFloat */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iFixFloat;
+		};
+		540D16A92A1DE85E009B7889 /* iConvex */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iConvex;
 		};
 		54D13DA22A136A990021A69A /* iDebug */ = {
 			isa = XCSwiftPackageProductDependency;

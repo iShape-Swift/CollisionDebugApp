@@ -10,19 +10,17 @@ import iFixBox
 import iFixFloat
 import iDebug
 
-struct CrossDot: Identifiable {
-    
-    let id: Int
-    let center: CGPoint
-    let radius: CGFloat
-    let color: Color
+struct ContactDot {
+    let start: CGPoint
+    let end: CGPoint
+    let title: String
 }
 
 final class SolverScene: ObservableObject {
 
     let dotEditor: PointsEditor
 
-    private (set) var crossDots: [CrossDot] = []
+    private (set) var contact: ContactDot?
     
     // ui
     private (set) var pointsA: [CGPoint] = []
@@ -116,33 +114,31 @@ final class SolverScene: ObservableObject {
         let pntsB = shapeB.map({ $0.fixVec })
 
         let trA = Transform(position: posA.fixVec, angle: rotA.gradToRad.fix)
-        pointsA = matrix.screen(wordPoints: trA.convertAsPoints(pntsA).map({ $0.point }))
+        pointsA = matrix.screen(worldPoints: trA.convertAsPoints(pntsA).map({ $0.point }))
 
         let trB = Transform(position: posB.fixVec, angle: rotB.gradToRad.fix)
-        pointsB = matrix.screen(wordPoints: trB.convertAsPoints(pntsB).map({ $0.point }))
+        pointsB = matrix.screen(worldPoints: trB.convertAsPoints(pntsB).map({ $0.point }))
 
         let a = ConvexCollider(points: pntsA)
         let b = ConvexCollider(points: pntsB)
         
         let colSolver = CollisionSolver()
         
-//        let contact = colSolver.collide(a, b, tA: trA, tB: trB)
-        
-        // for test transform B in A
-        
-        let mt = Transform.convertFromBtoA(trB, trA)
-        
-        let b2 = ConvexCollider(transform: mt, collider: b)
-//        let dots = ConvexIntersectSolver.intersect(a: a, b: b2)
-        
-        crossDots.removeAll()
-//        let r: CGFloat = 4
-//        for i in 0..<dots.count {
-//            let d = trA.convertAsPoint(dots[i].p).point
-//            let c = matrix.screen(worldPoint: d) - CGPoint(x: r, y: r)
-//            let crDot = CrossDot(id: i, center: c, radius: r, color: .red)
-//            crossDots.append(crDot)
-//        }
+        let contact = colSolver.collide(a, b, tA: trA, tB: trB)
+
+        if contact.status != .outside {
+            let start = matrix.screen(worldPoint: contact.point.point)
+            let pEnd = contact.point + (5 * 1024) * contact.normal
+            let end = matrix.screen(worldPoint: pEnd.point)
+
+            self.contact = .init(
+                start: start,
+                end: end,
+                title: "status: \(contact.status) type: \(contact.type)"
+            )
+        } else {
+            self.contact = nil
+        }
 
         self.objectWillChange.send()
     }

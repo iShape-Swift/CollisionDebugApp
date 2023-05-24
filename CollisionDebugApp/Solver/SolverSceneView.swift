@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import iDebug
 
 struct SolverSceneView: View {
     @ObservedObject
@@ -38,11 +39,18 @@ struct SolverSceneView: View {
             .strokedPath(.init(lineWidth: 2))
             .foregroundColor(.green)
             
-            ForEach(scene.crossDots) { dot in
+            if let contact = scene.contact {
                 Circle()
-                    .size(width: 2 * dot.radius, height: 2 * dot.radius)
-                    .offset(dot.center)
-                    .foregroundColor(dot.color)
+                    .size(width: 4, height: 4)
+                    .offset(contact.start - CGPoint(x: 2, y: 2))
+                    .foregroundColor(.red)
+                Path { path in
+                    path.move(to: contact.start)
+                    path.addLine(to: contact.end)
+                }
+                .strokedPath(.init(lineWidth: 2))
+                .foregroundColor(.red)
+                
             }
         }
     }
