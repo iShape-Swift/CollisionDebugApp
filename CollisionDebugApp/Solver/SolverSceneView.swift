@@ -50,7 +50,7 @@ struct SolverSceneView: View {
                 }
                 .strokedPath(.init(lineWidth: 2))
                 .foregroundColor(.red)
-                
+                Text(contact.title).font(.title3).foregroundColor(.black).position(contact.start - CGPoint(x: 2, y: 24))
             }
         }
     }

@@ -130,11 +130,11 @@ final class SolverScene: ObservableObject {
             let start = matrix.screen(worldPoint: contact.point.point)
             let pEnd = contact.point + (5 * 1024) * contact.normal
             let end = matrix.screen(worldPoint: pEnd.point)
-
+           
             self.contact = .init(
                 start: start,
                 end: end,
-                title: "status: \(contact.status) type: \(contact.type)"
+                title: "status: \(contact.status) type: \(contact.type) penetration: \(contact.penetration)"
             )
         } else {
             self.contact = nil
